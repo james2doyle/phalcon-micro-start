@@ -32,7 +32,6 @@ $app->post('/return_json', function () use ($app) {
 // This route makes a redirection to another route
 $app->get('/home', function () use ($app) {
     $app->response->redirect("")->sendHeaders();
-    // $app->response->send();
 });
 
 /**
