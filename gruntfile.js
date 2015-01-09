@@ -21,6 +21,10 @@ module.exports = function(grunt) {
       public: {
         files: ['public/**/*.{php,css,js,jpg,png}'],
         tasks: []
+      },
+      app: {
+        files: ['app.php'],
+        tasks: []
       }
     }
   });
