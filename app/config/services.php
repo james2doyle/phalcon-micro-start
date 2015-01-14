@@ -47,13 +47,8 @@ $di->set('modelsManager', function() {
 });
 
 $di['dispatcher'] = function() {
-    $dispatcher = new Dispatcher();
-    return $dispatcher;
+    return new Dispatcher();
 };
-
-// $di['response'] = function () {
-//     return new \Phalcon\Http\Response();
-// };
 
 /**
  * Database connection is created based in the parameters defined in the configuration file
