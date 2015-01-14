@@ -23,13 +23,10 @@ $di['view'] = function() use ($config) {
 
 //Set the views cache service
 $di->set('viewCache', function () use ($config) {
-    //Create an Output frontend. Cache the files for 2 days
     $frontCache = new Output(array(
         "lifetime" => $config->application->cacheLength
         ));
     // Create the component that will cache from the "Output" to a "File" backend
-    // Set the cache file directory - it's important to keep the "/" at the end of
-    // the value for the folder
     $cache = new File($frontCache, array(
         "cacheDir" => $config->application->compiledPath
         ));
