@@ -1,4 +1,5 @@
-/app/cache/*.php
+/app/cache/
+/app/cache/index.html
 /config/development/
 
 ## node gitignore
