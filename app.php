@@ -35,7 +35,7 @@ $app->get('/cached', function () use ($app) {
     'key' => 'latest-cache', // this becomes the filename
     'level' => \Phalcon\Mvc\View::LEVEL_ACTION_VIEW
     ));
-  // this will only be changed when the cahce is invalidated
+  // this will only be changed when the cache is invalidated
   $latest = time();
   echo $app->view->render('index/latest', array(
     'latest' => $latest
