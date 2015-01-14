@@ -30,7 +30,7 @@ $app->post('/return_json', function () use ($app) {
 });
 
 $app->get('/cached', function () use ($app) {
-  //Cache this view for 1 day with the key "latest-cache"
+  //Cache this view with the key "latest-cache"
   $app->view->cache(array(
     'key' => 'latest-cache', // this becomes the filename
     'level' => \Phalcon\Mvc\View::LEVEL_ACTION_VIEW
