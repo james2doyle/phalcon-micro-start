@@ -15,6 +15,6 @@ return new \Phalcon\Config(array(
         'viewsDir'       => APP_PATH . '/../views/',
         'compiledPath'      => APP_PATH . '/cache/',
         'compileAlways'      => true,
-        'baseUri'        => '/city-survey/',
+        'baseUri'        => '/phalcon-micro-start/',
     )
 ));
