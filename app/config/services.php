@@ -25,7 +25,7 @@ $di['view'] = function() use ($config) {
 $di->set('viewCache', function () use ($config) {
     //Create an Output frontend. Cache the files for 2 days
     $frontCache = new Output(array(
-        "lifetime" => 172800
+        "lifetime" => $config->application->cacheLength
         ));
     // Create the component that will cache from the "Output" to a "File" backend
     // Set the cache file directory - it's important to keep the "/" at the end of
