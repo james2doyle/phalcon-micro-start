@@ -13,8 +13,8 @@ return new \Phalcon\Config(array(
     'application' => array(
         'modelsDir'      => APP_PATH . '/models/',
         'viewsDir'       => APP_PATH . '/../views/',
-        'compiledPath'      => APP_PATH . '/cache/',
-        'compileAlways'      => true,
+        'compiledPath'      => APP_PATH . '/cache/', // for volt *.php files
+        'compileAlways'      => true, // use false in production
         'baseUri'        => '/phalcon-micro-start/',
     )
 ));
