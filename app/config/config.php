@@ -14,7 +14,7 @@ return new \Phalcon\Config(array(
         'modelsDir'      => APP_PATH . '/models/',
         'viewsDir'       => APP_PATH . '/../views/',
         'compiledPath'      => APP_PATH . '/cache/', // for volt *.php files
-        'compileAlways'      => true, // use false in production
+        'cacheLength'      => 172800, // 2 days
         'baseUri'        => '/phalcon-micro-start/',
     )
 ));
