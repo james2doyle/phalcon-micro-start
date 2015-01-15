@@ -24,7 +24,8 @@ $di['view'] = function() use ($config) {
 //Set the views cache service
 $di->set('viewCache', function () use ($config) {
     $frontCache = new Output(array(
-        "lifetime" => $config->application->cacheLength
+        'lifetime' => $config->application->cacheLength,
+        'level' => \Phalcon\Mvc\View::LEVEL_ACTION_VIEW
         ));
     // Create the component that will cache from the "Output" to a "File" backend
     $cache = new File($frontCache, array(
