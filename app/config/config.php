@@ -13,7 +13,7 @@ return new \Phalcon\Config(array(
     'application' => array(
         'modelsDir'      => APP_PATH . '/models/',
         'viewsDir'       => APP_PATH . '/../views/',
-        'compiledPath'      => APP_PATH . '/cache/', // for volt *.php files
+        'compiledPath'      => APP_PATH . '/cache/', // for cache html files
         'cacheLength'      => 172800, // 2 days
         'baseUri'        => '/phalcon-micro-start/',
     )
