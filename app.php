@@ -32,8 +32,7 @@ $app->post('/return_json', function () use ($app) {
 $app->get('/cached', function () use ($app) {
   //Cache this view with the key "latest-cache"
   $app->view->cache(array(
-    'key' => 'latest-cache', // this becomes the filename
-    'level' => \Phalcon\Mvc\View::LEVEL_ACTION_VIEW
+      'key' => 'latest-cache' // this becomes the filename
     ));
   // this will only be changed when the cache is invalidated
   $latest = time();
