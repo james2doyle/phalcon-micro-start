@@ -37,6 +37,7 @@ $acl->allow("Admins", "SpecialPages", "view");
 $acl->deny("Guests", "SpecialPages", "view");
 
 $app->get('/auth', function () use ($app, $acl) {
+  // get our Admins role if it is set
   $role = ($app->request->getQuery('role', 'string')) ? $app->request->getQuery('role', 'string'): "Guests";
   $allowed = $acl->isAllowed($role, "SpecialPages", "view");
   // warning: $acl->isAllowed returns a bool, Phalcon\Acl::ALLOW returns an int!
