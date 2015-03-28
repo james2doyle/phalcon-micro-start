@@ -8,7 +8,6 @@ use Phalcon\Mvc\Dispatcher;
 use Phalcon\Cache\Frontend\Output;
 use Phalcon\Cache\Backend\File;
 use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
-use Phalcon\Cache\Frontend\Output as OutputFrontend;
 
 $di = new FactoryDefault();
 
