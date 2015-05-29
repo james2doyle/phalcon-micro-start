@@ -50,6 +50,18 @@ $di['dispatcher'] = function() {
     return new Dispatcher();
 };
 
+$di['session'] = function() {
+    $session = new \Phalcon\Session\Adapter\Files();
+    $session->start();
+    return $session;
+};
+
+$di['cookies'] = function() {
+    $cookies = new Phalcon\Http\Response\Cookies();
+    $cookies->useEncryption(false);
+    return $cookies;
+};
+
 /**
  * Database connection is created based in the parameters defined in the configuration file
  */

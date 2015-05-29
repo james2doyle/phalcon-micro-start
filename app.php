@@ -46,6 +46,16 @@ $app->get('/home', function () use ($app) {
   $app->response->redirect("")->sendHeaders();
 });
 
+// set a cookie that lasts for 2 days
+// var g = $.get('set-cookie'); g.responseText
+$app->get('/set-cookie', function () use ($app) {
+  $app->cookies
+  ->set('visited', 'visisted', strtotime('+2 days'))
+  ->send();
+  // let me know if the cookie was set
+  echo $app->cookies->has('visited');
+});
+
 /**
  * Not found handler
  */
