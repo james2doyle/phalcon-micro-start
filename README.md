@@ -1,6 +1,10 @@
 # phalcon-micro-start
 
-A more practical example of the start of a Phalcon micro application
+A more practical example of the start of a Phalcon micro application.
+
+## Installation
+
+Make sure you update the [baseUri](https://github.com/james2doyle/phalcon-micro-start/blob/master/app/config/config.php#L18) for the app.
 
 #### Permissions
 
