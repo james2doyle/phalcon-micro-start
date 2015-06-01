@@ -4,7 +4,7 @@ A more practical example of the start of a Phalcon micro application.
 
 ## Installation
 
-Make sure you update the [baseUri](https://github.com/james2doyle/phalcon-micro-start/blob/master/app/config/config.php#L18) for the app.
+You may need to [set the directory index](https://github.com/james2doyle/phalcon-micro-start/blob/master/.htaccess#L2) for the app before you begin. If you are using a database, make sure [the settings](https://github.com/james2doyle/phalcon-micro-start/blob/master/app/config/config.php#L6-L10) are correct, also be sure you update the [baseUri](https://github.com/james2doyle/phalcon-micro-start/blob/master/app/config/config.php#L18) for the app.
 
 #### Permissions
 
